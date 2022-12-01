@@ -8,4 +8,6 @@ has_person_name
   
   has_many :booking_types
 
+  validates :booking_link, presence: true
+
 end
