@@ -17,10 +17,21 @@ user = User.create!(
     password_confirmation: "password"
 )
 
-booking_type2 = BookingType.create!(
+booking_type1 = BookingType.create!(
     color: "#fbbf24",
-    description: "30 min Test 123",
+    description: "15 min Test 123",
     duration: 15,
+    location: "Zoom",
+    name: "15min",
+    payment_required: false,
+    price: nil,
+    user: user 
+)
+
+booking_type2 = BookingType.create!(
+    color: "#34d399",
+    description: "30 min Test 123",
+    duration: 30,
     location: "Zoom",
     name: "30min",
     payment_required: false,
