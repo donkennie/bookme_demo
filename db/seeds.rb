@@ -49,3 +49,5 @@ booking_type3 = BookingType.create!(
     price:125,
     user: user 
 )
+
+puts "Reset complete 😻"
